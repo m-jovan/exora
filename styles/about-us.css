@@ -1,5 +1,4 @@
 #o-nama {
-  padding: 86px;
   flex-wrap: wrap;
 }
 
@@ -46,7 +45,7 @@
   bottom: -8%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 922px) {
   #o-nama {
     display: flex;
     flex-direction: column;

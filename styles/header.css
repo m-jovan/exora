@@ -48,3 +48,9 @@ html:not([data-scroll="0"]) header nav {
 .nav-list li:hover {
   border-bottom: 3px solid var(--blue);
 }
+
+@media (max-width: 567px) {
+  nav {
+    padding: 16px;
+  }
+}
