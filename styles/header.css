@@ -53,4 +53,8 @@ html:not([data-scroll="0"]) header nav {
   nav {
     padding: 16px;
   }
+
+  .nav-list li {
+    margin-right: 0;
+  }
 }
