@@ -1,0 +1,53 @@
+#pocetna {
+  background: url("../images/home.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 692px;
+}
+
+.cards-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card {
+  padding: 24px;
+  width: 238px;
+  text-align: center;
+  position: relative;
+}
+
+.card:first-of-type::before {
+  content: "";
+  width: 95px;
+  height: 4px;
+  background-color: var(--blue);
+  position: absolute;
+  top: -24px;
+  left: 0;
+}
+
+.card:last-of-type::after {
+  content: "";
+  width: 95px;
+  height: 4px;
+  background-color: var(--black);
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 567px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+#projekti {
+  padding: 86px;
+  flex-wrap: wrap;
+}
+
+#projekti .container {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+}
+
+#projekti .list-container {
+  padding: 24px 36px;
+  position: relative;
+}
+
+#projekti .list-container::after {
+  content: "";
+  width: 128px;
+  height: 4px;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  bottom: -48px;
+}
+
+#projekti li {
+  margin-bottom: 8px;
+}
+
+#projekti li ul {
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  #projekti {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  #projekti .container {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  #projekti .list-container:first-of-type::after {
+    display: none;
+  }
+}

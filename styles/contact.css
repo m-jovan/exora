@@ -1,0 +1,53 @@
+#kontakt {
+  padding: 86px;
+  flex-wrap: wrap;
+}
+
+#kontakt .container {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container figure {
+  text-align: center;
+  position: relative;
+  width: 60%;
+}
+
+.contact-container figure::after {
+  content: "";
+  width: 80%;
+  height: 90%;
+  bottom: -14%;
+  left: -68px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--yellow);
+}
+
+.contact-container span:last-of-type {
+  margin-bottom: 8px;
+}
+
+.map-container {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  #kontakt .container {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
