@@ -44,6 +44,13 @@ h2 i {
   display: block;
 }
 
+h5 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -110,7 +117,7 @@ section {
   section {
     padding: 86px 24px;
   }
-  
+
   .container {
     width: 100%;
   }
