@@ -45,6 +45,10 @@
   bottom: -8%;
 }
 
+.know-more {
+  margin-top: 16px;
+}
+
 @media (max-width: 922px) {
   #o-nama {
     display: flex;

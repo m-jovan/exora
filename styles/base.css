@@ -113,6 +113,14 @@ section {
   width: 90%;
 }
 
+.link {
+  color: blue;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   section {
     padding: 86px 24px;

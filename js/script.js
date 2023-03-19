@@ -9,3 +9,14 @@ document.addEventListener(
 );
 
 document.addEventListener("touchstart", () => {}, { passive: true });
+
+document.getElementById("close-button").addEventListener("click", () => {
+  document.getElementById("news-banner").classList.add("hide-banner");
+  let cardsContainer = document.getElementsByClassName(
+    "cards-container-with-banner"
+  );
+
+  if (cardsContainer && cardsContainer[0]) {
+    cardsContainer[0].classList.remove("cards-container-with-banner");
+  }
+});

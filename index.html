@@ -31,7 +31,34 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="header">
+      <div id="news-banner" class="news-banner">
+        <span>
+          Razgovarali smo o sistemima klimatizacije, zakonskim propisima i
+          najboljoj praksi sa daibau.rs. Pročitajte ceo intervju
+          <a
+            class="link"
+            href="https://www.daibau.rs/clanak/1391/sistemi_klimatizacije_-_sta_obuhvataju_i_kako_se_dele#exora"
+            target="_blank"
+            >ovde</a
+          >.</span
+        >
+        <svg
+          id="close-button"
+          class="close-button"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
       <nav data-scroll="0">
         <div class="logo">
           <a href="#pocetna">
@@ -51,7 +78,7 @@
     </header>
     <main>
       <section id="pocetna">
-        <div class="cards-container">
+        <div class="cards-container cards-container-with-banner">
           <div class="card bg-blue">
             <p>
               Izrada kvalitetnog projekta zahteva puno znanja, iskustva, ponekad
@@ -92,9 +119,23 @@
               <li>nadzor pri izvođenju radova i drugo</li>
             </ul>
             <p>Arhitektama nudim saradnju pri planiranju novih objekata.</p>
+            <p class="know-more">
+              Saznajte više u intervjuu sa daibau.rs
+              <a
+                class="link"
+                href="https://www.daibau.rs/clanak/1391/sistemi_klimatizacije_-_sta_obuhvataju_i_kako_se_dele#exora"
+                target="_blank"
+                >ovde</a
+              >.
+            </p>
           </div>
           <div class="img-container half">
-            <img width="468" src="./images/o-nama.png" alt="exora-o-nama" loading="lazy"   />
+            <img
+              width="468"
+              src="./images/o-nama.png"
+              alt="exora-o-nama"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
@@ -142,7 +183,8 @@
               </li>
               <li>
                 Izgradnja privatne kuće, sistem grejanja, klimatizacije,
-                ventilacije i sanitarne instalacije - St. Lorenz, Austrija (2021)
+                ventilacije i sanitarne instalacije - St. Lorenz, Austrija
+                (2021)
               </li>
               <li>
                 Izgradnja stambenog objekata, sistem grejanja, klimatizacije,
@@ -196,7 +238,7 @@
         </div>
       </section>
       <footer>
-        <p>© 2022. Projektni biro Exora. Sva prava zadržana.</p>
+        <p>© 2023. Projektni biro Exora. Sva prava zadržana.</p>
       </footer>
     </main>
   </body>
