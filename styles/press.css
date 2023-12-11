@@ -1,0 +1,13 @@
+#press {
+  flex-wrap: wrap;
+  min-height: 348px;
+}
+
+#press .container {
+  padding: 16px;
+}
+
+#press li {
+  margin-bottom: 8px;
+}
+
